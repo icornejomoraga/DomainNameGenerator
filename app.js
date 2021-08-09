@@ -1,4 +1,4 @@
-//console.log("Hello World");
+console.log("Hello World");
 
 var pronoun = ['the','our'];
 var adj = ['great', 'big' ];
@@ -7,16 +7,10 @@ var noun = ['jogger','racoon'];
 
 
 
-let elemento =['earth', 'wind', 'fire'];
-let zodiac = ['aries', 'tauro','geminis'];
-let planets =['mercury', 'venus','jupiter'];
 
 
-//usamos la funcion sort para ordenar el arreglo pero dentro de la funcion ponemos la funcion flecha math.random para que nos devuelva el orden aleatorio
+//uso la funcion sort para ordenar el arreglo pero dentro de la funcion ponemos la funcion flecha math.random para que nos devuelva el orden aleatorio
 
-//elemento.sort(() => Math.random() - 0.5);
-//zodiac.sort(() => Math.random() - 0.5);
-//planets.sort(() => Math.random() - 0.5);
 
 pronoun.sort(() => Math.random() - 0.5);
 adj.sort(() => Math.random() - 0.5);
@@ -24,14 +18,14 @@ noun.sort(() => Math.random() - 0.5);
 
 
 //este console.log  devuelve de forma aleatoria el dominio
-//console.log(elemento[0]+zodiac[0]+planets[0]+'.com')
+
 console.log(pronoun[0]+adj[0]+noun[0]+'.com');
 
 //pero el ejercicio nos pide que devolvamos todas las combinaciones posibles y la unica forma que conozco es con un bucle
 
 
 //primero concatenamos los arreglos y despues los pasamos por un for 
-//let fusion = [...elemento, ...zodiac, ...planets]
+
 let fusion = [...pronoun, ...adj, ...noun]
 
 
@@ -51,7 +45,7 @@ let fusion = [...pronoun, ...adj, ...noun]
     //}
 
 
-//var array = ["apple", "banana", "lemon", "mango","manzana","pera","frutilla","durazno","kiwi"];
+
 //var array = ["the", "our", "great", "big","jogger","racoon"];
 let array = [...pronoun, ...adj, ...noun]
 var result = [];
